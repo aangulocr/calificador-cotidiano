@@ -1,0 +1,19 @@
+# Byte-compiled archivos
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Entornos virtuales
+venv/
+env/
+.venv/
+.env
+
+# Configuración del editor IDE (VS Code)
+.vscode/
+
+# Archivos Excel autogenerados y resultados
+Resultados_*.xlsx
+
+# IMPORTANTE: Ignorar la carpeta de trabajos de los estudiantes para proteger privacidad
+Trabajos_Cotidianos/

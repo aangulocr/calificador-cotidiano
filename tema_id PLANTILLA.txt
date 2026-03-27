@@ -1,0 +1,60 @@
+==============================================================================
+  REFERENCIA DE tema_id  —  Para usar en la hoja _CONFIG de la plantilla
+==============================================================================
+  Columna "tema_id" de la hoja _CONFIG debe coincidir EXACTAMENTE con el
+  valor de la columna ID que se muestra aquí (sensible a mayúsculas/minúsculas)
+==============================================================================
+
+┌─────────────────────────────┬──────────────────────────────┬───────┬─────────────────────┐
+│ ID (tema_id)                │ Nombre visible               │ Rango │ Categoría           │
+├─────────────────────────────┼──────────────────────────────┼───────┼─────────────────────┤
+│ ESTRUCTURA                  │                              │       │                     │
+│  nombre_hoja                │ Nombre de hoja               │  NO   │ Estructura          │
+│  color_hoja                 │ Color de pestaña             │  NO   │ Estructura          │
+├─────────────────────────────┼──────────────────────────────┼───────┼─────────────────────┤
+│ OPERACIONES Y FUNCIONES     │                              │       │                     │
+│  operaciones_basicas        │ Operaciones básicas          │  SÍ   │ Funciones           │
+│  concatenar                 │ CONCATENAR / CONCAT          │  SÍ   │ Funciones           │
+│  contar                     │ CONTAR                       │  SÍ   │ Funciones           │
+│  contara                    │ CONTARA                      │  SÍ   │ Funciones           │
+│  contar_si                  │ CONTAR.SI                    │  SÍ   │ Funciones           │
+│  contar_blanco              │ CONTAR.BLANCO                │  SÍ   │ Funciones           │
+│  promedio                   │ PROMEDIO                     │  SÍ   │ Funciones           │
+│  mediana                    │ MEDIANA                      │  SÍ   │ Funciones           │
+│  moda_uno                   │ MODA.UNO                     │  SÍ   │ Funciones           │
+│  max_min                    │ MAX / MIN                    │  SÍ   │ Funciones           │
+│  si_simple                  │ SI simple                    │  SÍ   │ Funciones           │
+│  si_anidado                 │ SI anidado                   │  SÍ   │ Funciones           │
+│  buscarv                    │ BUSCARV                      │  SÍ   │ Funciones           │
+│  sumar_si                   │ SUMAR.SI                     │  SÍ   │ Funciones           │
+│  si_conjunto                │ SI.CONJUNTO / IFS            │  SÍ   │ Funciones           │
+│  operaciones_combinadas     │ Operaciones combinadas       │  SÍ   │ Funciones           │
+│  calculo_porcentaje         │ Cálculo de porcentaje        │  SÍ   │ Funciones           │
+│  si_con_calculo             │ SI/SI.CONJUNTO con cálculo   │  SÍ   │ Funciones           │
+├─────────────────────────────┼──────────────────────────────┼───────┼─────────────────────┤
+│ ANÁLISIS Y VISUALIZACIÓN    │                              │       │                     │
+│  tabla_dinamica             │ Tabla dinámica               │  NO   │ Análisis            │
+│  grafico_dinamico           │ Gráfico dinámico             │  NO   │ Análisis            │
+│  grafico_normal             │ Gráfico normal               │  NO   │ Análisis            │
+│  filtros                    │ Filtros automáticos          │  NO   │ Análisis            │
+│  formato_condicional        │ Formato condicional          │  SÍ   │ Análisis            │
+│  validacion_datos           │ Validación de datos          │  SÍ   │ Análisis            │
+├─────────────────────────────┼──────────────────────────────┼───────┼─────────────────────┤
+│ FORMATO                     │                              │       │                     │
+│  bordes                     │ Bordes de celdas             │  SÍ   │ Formato             │
+│  relleno                    │ Relleno / Color de fondo     │  SÍ   │ Formato             │
+│  color_fuente               │ Color de fuente              │  SÍ   │ Formato             │
+│  formato_moneda             │ Formato de moneda            │  SÍ   │ Formato             │
+│  formato_fecha              │ Formato de fecha             │  SÍ   │ Formato             │
+└─────────────────────────────┴──────────────────────────────┴───────┴─────────────────────┘
+
+==============================================================================
+  NOTAS
+==============================================================================
+  - La nueva columna "Rango" indica SÍ cuando el tema evalúa celdas específicas.
+    En esos casos debes colocar un rango como A1:B10. Si dice NO, coloca "-"
+    en la celda de celdas_evaluar de _CONFIG.
+  - Operaciones Básicas ahora también acepta equivalentes (ej. SUMA en vez de +)
+  - Cálculo de porcentaje acepta variantes (ej. /100, *%, *decimal)
+  - Usa "-" en celdas_evaluar para evaluar toda la hoja sin rango fijo
+==============================================================================
